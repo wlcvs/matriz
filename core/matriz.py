@@ -15,12 +15,4 @@ class Matriz:
         else:
             self._elementos.append(Elemento(linha_m, coluna_n, valor))
 
-    '''
-    Programar essa função é algo que não é possível no estado atual do código.
-    Usar um laço for para percorrer a lista de elementos e entrar em um por um verificando 
-    sua linha e qual a sua coluna parece algo tão idiota, isso está me dando agonia porque
-    eu sei que há uma maneira melhor de fazer isso
-    '''
-    def del_elemento(self, linha_m: int, coluna_n: int) -> None:
-        pass
 
