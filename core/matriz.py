@@ -29,27 +29,6 @@ class Matriz:
                     self._elementos[j], self._elementos[j + 1] = self._elementos[j + 1], self._elementos[j]
                 if self._elememtos[j].coluna_n > self._elementos[j + 1].coluna_n:
                     self._elementos[j], self._elementos[j + 1] = self._elementos[j + 1], self._elementos[j]
-
-    def visualizar(self):
-        # Criação da estrutura de dados
-        matriz = []
-        for i in range(self.qtd_linhas_m):
-            matriz.append([]) # inserção das linhas
-            for j in range(self.qtd_colunas_n):
-                matriz[i].append([0]) # inserção das colunas
-        # Preenchimento com os valores reais 
-        for i in range(len(self._elementos)):
-            for j in range(1, self.qtd_linhas_m + 1):
-                for k in range(1, self.qtd_colunas_n + 1): 
-                    if self._elementos[i]._linha_m == j and self._elementos[i]._coluna_n == k: 
-                        matriz[j - 1][k - 1] = [self._elementos[i]._valor] 
-        # Exibição da matriz de fato
-        matriz_str = str(matriz)
-        matriz_list = list(matriz_str)
-        colchetes = ["["]
-        for i in range(len(matriz)):
-            
-
 '''
 [0, 0]
 [0, 0]
@@ -77,4 +56,3 @@ matriz_1.add_elemento(2, 1, -1.0)
 # isso tem que dar erro
 # matriz_1.add_elemento(1, 2, -1.0)
 
-matriz_1.visualizar()
