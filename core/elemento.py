@@ -7,5 +7,5 @@ class Elemento:
         self._valor = valor
 
     def __str__(self):
-        return self._valor
+        return str(self._valor)
 
