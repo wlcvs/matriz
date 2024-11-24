@@ -2,3 +2,4 @@ venv/
 .idea
 __pycache__
 web/db.sqlite3
+web/web/__pycache__/
